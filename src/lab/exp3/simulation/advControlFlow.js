@@ -179,6 +179,15 @@ window.view = {
 		{
 		 	this.displayLoop('dowhileLoopContent', 'codeContentDoWhile1')
 		}
+		if (selected_loop === 'while' && inputValue>20){
+				alert('Invalid Input')
+		}
+		if (selected_loop === 'do-while' && inputValue>20){
+				alert('Invalid Input')
+		}
+		if (selected_loop === 'for' && inputValue>20){
+				alert('Invalid Input')
+		}
 		this.disableButton('btnStart')
 		this.changeClass( 'btnStart', 'buttonDisable startButton')
 		this.enableButton('btnNext')
