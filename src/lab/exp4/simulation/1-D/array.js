@@ -76,6 +76,9 @@ window.view = {
 			this.numbers.push(String(random))
 		}
 	},
+
+
+
 	getUserInput: function() {
 		var inputValue = document.getElementById('userInput').value
 		inputValue = inputValue.replace(/\s/g, ',')
@@ -87,6 +90,7 @@ window.view = {
 			this.generateRandomNumbers()
 		else if (element[1].checked)
 			this.getUserInput()
+
 	},
 	createBoxes: function() {
 		for ( i = 0 ; i < this.numbers.length ; i++ ) {
@@ -188,6 +192,9 @@ window.view = {
 		var elements = document.getElementById('sortingDiv').childNodes
 		elements[this.i - 1].firstChild.style.background = '#41B247'
 	},
+
+
+
 	updateArray: function() {
 		var elements = document.getElementById('sortingDiv').childNodes
 		for ( i = 0 ; i < this.numbers.length ; i ++ ) {

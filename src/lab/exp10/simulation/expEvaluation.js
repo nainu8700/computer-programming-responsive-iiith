@@ -550,6 +550,10 @@ window.view = {
 		this.enableElement('d')
 		document.getElementById('buttonEdit').className += ' hide'
 		document.getElementById('buttonSave').className = 'button saveButton'
+		document.getElementById('a').setAttribute('value','0')
+		document.getElementById('b').setAttribute('value','0')
+		document.getElementById('c').setAttribute('value','0')
+		document.getElementById('d').setAttribute('value','0')
 	},
 	killWhiteSpaces: function (expression) {
 			return expression.replace(/\s+/g, '')
